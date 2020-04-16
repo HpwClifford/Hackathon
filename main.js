@@ -24,8 +24,9 @@ class BitCoinAppInstance {
     }
 }
 
-$(document).ready(() => {
+// $(document).ready(() => {
     // call constructor
-    new BitCoinAppInstance();
-});
+   
+// });
 
+new BitCoinAppInstance();
