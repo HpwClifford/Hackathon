@@ -40,7 +40,7 @@ class AppInstance {
         // create new html element to store price
         // append to body
         const priceInfo = document.getElementById("current-price");
-        priceInfo.innerHTML = `$${price}`;
+        priceInfo.innerHTML = `Current BTC Price: $${price}`;
         
     }
 

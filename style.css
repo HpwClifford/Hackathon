@@ -2,13 +2,26 @@ body {
     width: 300px;
     background-color: azure;
     text-align: center;
-    padding: 40px;
+    padding: 20px;
 }
 
 #crypto-tracker-logo {
     width: 80px;
     margin: 0 auto;
 }
+#welcome-title {
+    color: cornflowerblue;
+}
+
+button {
+    width: 70px;
+    height: 25px;
+    background-color: cornflowerblue;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
 
 #error-message {
     color: red;
@@ -20,3 +33,4 @@ body {
     font-size: 14px;
     visibility: hidden;
 }
+
