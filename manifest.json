@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "Crypto Tracker",
     "version": "0.1",
-    "description": "continuously checks BTC price data",
+    "description": "Alerts user when BTC price hits a price they want to buy or sell at",
     "icons": {
         "16": "btc.png",
         "32": "btc.png",

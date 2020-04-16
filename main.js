@@ -19,7 +19,6 @@ class AppInstance {
         .then((data) => {
             let price = data.data.amount;
             this.update(price);
-            console.log(this.checkCount, price, this.user);
 
             // Check if price is currently higher than sell price 
             // (below -> or lower than buy price)
@@ -41,7 +40,7 @@ class AppInstance {
         // create new html element to store price
         // append to body
         const priceInfo = document.getElementById("current-price");
-        priceInfo.innerHTML = `$${price}`;
+        priceInfo.innerHTML = `Current BTC Price: $${price}`;
         
     }
 
@@ -71,7 +70,6 @@ document.addEventListener("DOMContentLoaded", function() {
         // storing buy / sell values
         const buyValue = document.getElementById("buyPrice").value;
         const sellValue = document.getElementById("sellPrice").value;
-        console.log(typeof buyValue);
 
         // if inputs valid
         if (!isNaN(buyValue) 
@@ -79,11 +77,12 @@ document.addEventListener("DOMContentLoaded", function() {
             && Number(buyValue) >= 0 
             && Number(sellValue) >= 0) {
 
-            if (Number(buyPrice) === Number(sellPrice)) {
-                console.log('helloooo');
-                instance.inputError();
+            if (Number(buyValue) > Number(sellValue)) {
+                instance.areYouSureError();
+                return;
             }
 
+            
             // input into user obj
             instance.user.buyPrice = buyValue;
             instance.user.sellPrice = sellValue;
