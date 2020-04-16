@@ -3,14 +3,21 @@
     "name": "Crypto Tracker",
     "version": "0.1",
     "description": "continuously checks BTC price data",
-    
+    "icons": {
+        "16": "btc.png",
+        "32": "btc.png",
+        "128": "btc.png"
+    },
     "browser_action": {
-        "default_icon": "crypto-icon.png",
+        "default_icon": {
+            "16": "btc.png",
+            "32": "btc.png",
+            "128": "btc.png"
+        },
         "default_popup": "index.html"
     },
-
     "background": {
         "persistent": false,
-        "scripts": ["index.html", "main.js"]
-      }
+        "scripts": ["main.js"]
+    }
 }
