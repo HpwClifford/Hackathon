@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "Crypto Tracker",
+    "version": "0.1",
+    "description": "continuously checks BTC price data",
+    
+    "browser_action": {
+        "default_icon": "crypto-icon.png",
+        "default_popup": "index.html"
+    },
+
+    "background": {
+        "persistent": false,
+        "scripts": ["main.js"]
+      }
+}
