@@ -11,6 +11,6 @@
 
     "background": {
         "persistent": false,
-        "scripts": ["main.js"]
+        "scripts": ["index.html", "main.js"]
       }
 }

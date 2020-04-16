@@ -26,7 +26,11 @@ class BitCoinAppInstance {
 
 // $(document).ready(() => {
     // call constructor
+<<<<<<< HEAD
    
+=======
+    
+>>>>>>> 7cb73fce14bf0e6decf4056cebd54c2c330e4baf
 // });
 
 new BitCoinAppInstance();
